@@ -2,8 +2,7 @@
 ## makeCacheMatrix and cacheSolve functions are used to solve the inverse of the matrix and cache it for furture use.
 
 
-## makeCacheMatrix
-
+## makeCacheMatrix:
 ## This function is used to create a list containing a function to:
 ## set the value of the Matix 
 ## get the value of the Matrix
@@ -11,7 +10,6 @@
 ## get the value of the Inverse of the Matrix
 
 makeCacheMatrix <- function(x = matrix()) {
-
   m <- NULL
   set <- function(y) {
     x <<- y
@@ -29,8 +27,6 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## cacheSolve
-
-
 ## The function checks if the Inverse of the matix is calculated before. 
 ## If the inverse of the matirx is in cache, it gets the Inverse Matrix from the cache. 
 ## Else, it computes the Inverse using R function "solve".
